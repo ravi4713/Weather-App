@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <div >
+            <h1> Weather App </h1>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <form method="pdst">
+            
+            <label for="location"><h1>Enter Location To get Details: </h1></label>
+            <input type="text" name="location" id="location">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <hr>
+    <div id="output">
+        <h2>City</h2>
+        <div class="loca">
+            <div class="qhead">Location</div><span id='answer'>{{ reslut.body.location.name}}</span>
+            <div class="qhead">Country</div><span id='answer'>{{ reslut.body.location.country}}</span>
+            <div class="qhead">State</div><span id='answer'>{{ reslut.body.location.region}}</span>
+        </div>
+        <hr>
+        <h2>Temperature</h2>
+        <div class="loca">
+        <div class="qhead">Observation Time
+        </div><span id='answer'>{{ reslut.body.current.observation_time}}</span>
+        <div class="qhead">Temperature
+        </div><span id='answer'>{{ reslut.body.current.temperature}}</span>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

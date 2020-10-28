@@ -1,0 +1,39 @@
+header {
+    width:60%;
+    margin: auto;
+    text-align: center;
+    font-size: 210%;
+    color: rgb(92, 92, 92);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    font-size: 165%;
+    color: rgb(197, 175, 175)
+
+}
+
+input{
+    border: 2px solid black;
+    height: 50px;
+    width: 320px;
+    font-size: 140%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.loca{
+    width: 80%;
+    margin: auto;
+    font-size: 165%;
+    color: rgb(157, 148, 211)
+}
+.qhead{
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    color: rgb(79, 79, 236);
+}
+#answer{
+    color: rgb(102, 102, 168);
+}
